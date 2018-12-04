@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.example.priyanka.mapsdemo.MapsActivity"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:elevation="10dp"
+        android:background="@drawable/border_search"
+        android:id="@+id/relLayout1">
+
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/ic_magnify"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_search_black_24dp"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextViewv"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="0dp"
+            android:layout_toRightOf="@id/ic_magnify"
+            android:background="@null"
+            android:ems="5"
+            android:hint="Nhập tên quốc gia ,thành phố hoặc địa điểm"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+
+            android:textColor="#000"
+            android:textSize="16sp">
+
+            <requestFocus></requestFocus>
+        </AutoCompleteTextView>
+
+    </RelativeLayout>
+
+        <Button
+            android:background="@drawable/border_search"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/btnsearch"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:onClick="onClick"
+            android:text="Search"
+            android:textColor="@color/colorBlack" />
+    </LinearLayout>
+
+</RelativeLayout>

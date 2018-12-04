@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:title="Khóa Học">
+            <menu>
+        <item
+            android:icon="@drawable/ic_folder_black_24dp"
+            android:id="@+id/ThongTin"
+            android:title="Thông Tin Sinh Viên" />
+        <item
+            android:icon="@drawable/ic_folder_black_24dp"
+            android:id="@+id/DanhSach"
+            android:title="Đăng Kí Môn Học" />
+        <item
+            android:icon="@drawable/ic_folder_black_24dp"
+            android:id="@+id/DangKy"
+            android:title="Môn Học Đã Đăng Kí" />
+        <item
+            android:icon="@drawable/ic_folder_black_24dp"
+            android:id="@+id/LichHoc"
+            android:title="Xem lịch học" />
+        <item
+            android:icon="@drawable/ic_folder_black_24dp"
+            android:id="@+id/LichThi"
+            android:title="Xem lịch thi" />
+            </menu>
+        </item>
+    </group>
+    <item android:title="">
+        <menu>
+        <item
+            android:icon="@drawable/ic_home_black_24dp"
+            android:id="@+id/home"
+            android:title="Trang chủ" />
+        </menu>
+    </item>
+
+</menu>

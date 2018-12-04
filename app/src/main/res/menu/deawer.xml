@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menuThem"
+        android:title="Thêm Thông Tin Sinh Viên" />
+    <item
+        android:id="@+id/menuChinhSua"
+        android:title="Chỉnh sửa thông tin" />
+    <item
+        android:id="@+id/menuXoa"
+        android:title="Xóa thông tin" />
+</menu>
